@@ -1,0 +1,10 @@
+{
+  "Ash Resource": {
+    "prefix": "ares",
+    "body": [
+      "defmodule ${1:Project}.${Resource} do",
+      "\tuse Ash.Resource, data_layer: ${3:AshPostgres.DataLayer}",
+      "end"
+    ]
+  }
+}

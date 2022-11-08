@@ -1,0 +1,20 @@
+{
+  "name": "ash-framework-snippets",
+  "displayName": "Ash Framework Snippets",
+  "description": "Snippets for Ash Framework",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "elixir",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
