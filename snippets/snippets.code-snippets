@@ -2,9 +2,28 @@
   "Ash Resource": {
     "prefix": "ares",
     "body": [
-      "defmodule ${1:Project}.${Resource} do",
-      "\tuse Ash.Resource, data_layer: ${3:AshPostgres.DataLayer}",
+      "defmodule ${1:Module} do",
+      "\tuse Ash.Resource",
+      "\t$2"
       "end"
     ]
-  }
+  },
+  "Ash Resource with Postgres": {
+      "prefix": "arespg",
+      "body": [
+        "defmodule ${1:Module} do",
+        "\tuse Ash.Resource,"
+        "\t\tdata_layer: ${3:AshPostgres.DataLayer}",
+        "end"
+      ]
+    },
+    "Ash postgres": {
+        "prefix": "apg",
+        "body": [
+            "postgres do",
+                "table \"${1:table}\"",
+                "repo ${2:Project}.Repo",
+              "end"
+        ]
+    }
 }
