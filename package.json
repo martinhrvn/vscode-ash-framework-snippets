@@ -3,6 +3,7 @@
   "displayName": "Ash Framework Snippets",
   "description": "Snippets for Ash Framework",
   "repository": "https://github.com/martinhrvn/vscode-ash-framework-snippets",
+  "publisher": "martinhrvn",
   "version": "0.0.5",
   "scripts": {
     "test": "",
