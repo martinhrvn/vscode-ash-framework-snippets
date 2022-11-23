@@ -10,10 +10,18 @@ Below is a list of all available snippets.
 
 ### Basic
 
-|  Trigger | Content                                                                                                      |
-| -------: | ------------------------------------------------------------------------------------------------------------ |
-|   `ares` | Ash Resource `defmodule Yourapp.Resource do <br/>use Ash.Resource <br/> end`                                 |
-| `arespg` | Ash Resource with Postgres DataLayer <br>`defmodule Yourapp.Resource do `<br/>`use Ash.Resource` <br/> `end` |
+|    Trigger |            NAME            |                                                 DESCRIPTION                                                  |
+| ---------- |----------------------------|--------------------------------------------------------------------------------------------------------------|
+|   `aintpk` | Ash int PK                 | `integer_primary_key :${1:name}`                                                                             |
+|     `aatr` | Ash attribute              | `attribute :${1:name}, :${2:string}`                                                                         |
+|    `aatrs` | Ash Attributes             | `attributes do`<br />`        ${1}`<br />`end`                                                                       |
+|    `auuid` | Ash uuid PK                | `uuid_primary_key :${1:name}`                                                                                |
+|     `arel` | Ash relationships          | `relationships do`<br />`     ${1}`<br />`end`                                                                    |
+|      `aho` | Ash has one                | `has_one :${1:name}, ${2:Resource}`                                                                          |
+|   `arespg` | Ash Resource with Postgres | `defmodule ${1:Module} do`<br />`     use Ash.Resource,`<br />`               data_layer: ${3:AshPostgres.DataLayer}`<br />`end` |
+|      `apg` | Ash postgres               | `postgres do`<br />`table "${1:table}"`<br />`repo ${2:Project}.Repo`<br />`end`                             |
+|     `ares` | Ash Resource               | `defmodule ${1:Module} do`<br />`     use Ash.Resource`<br />`        $2`<br />`end`                                      |
+|     `aact` | Ash Actions                | `actions do`<br />`   ${1}`<br />`end`                                                                          |
 
 ## Release Notes
 
