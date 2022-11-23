@@ -1,5 +1,5 @@
 # Ash Framework snippets
-![](.github/images/ash-logo.svg)
+![](.github/images/ash-logo.png)
 This extension contains code snippets for [Ash Framework](https://www.ash-hq.org/) `.eex`, `.html.eex`, `.heex` and `.sface` files for [VS Code](https://code.visualstudio.com/) editor.
 
 **Enjoy!!!**
