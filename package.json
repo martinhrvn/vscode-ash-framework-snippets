@@ -2,7 +2,11 @@
   "name": "ash-framework-snippets",
   "displayName": "Ash Framework Snippets",
   "description": "Snippets for Ash Framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "scripts": {
+    "test": "",
+    "deploy": "vsce publish"
+  },
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -16,5 +20,8 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^2.14.0"
   }
 }
