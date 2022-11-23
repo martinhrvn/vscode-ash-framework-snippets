@@ -1,65 +1,64 @@
-# ash-framework-snippets README
+# Ash Framework snippets
 
-This is the README for your extension "ash-framework-snippets". After writing up a brief description, we recommend including the following sections.
+This extension contains code snippets for [Ash Framework](https://www.ash-hq.org/) `.eex`, `.html.eex`, `.heex` and `.sface` files for [VS Code](https://code.visualstudio.com/) editor.
 
-## Features
+**Enjoy!!!**
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Snippets
 
-For example if there is an image subfolder under your extension project workspace:
+Below is a list of all available snippets.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Basic
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+|  Trigger | Content                                                                                                      |
+| -------: | ------------------------------------------------------------------------------------------------------------ |
+|   `ares` | Ash Resource `defmodule Yourapp.Resource do <br/>use Ash.Resource <br/> end`                                 |
+| `arespg` | Ash Resource with Postgres DataLayer <br>`defmodule Yourapp.Resource do `<br/>`use Ash.Resource` <br/> `end` |
 
-## Requirements
+### Control flow
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+|  Trigger | Content                              |
+| -------: | ------------------------------------ |
+|    `for` | for `<%= for $1 <- $1 do %>`         |
+|     `if` | if `<%= if $1 do %>`                 |
+|    `ife` | if else `<%= if $1 do %> <% else %>` |
+|   `cond` | cond `<%= cond do %>`                |
+| `unless` | unless `<%= unless $1 do %>`         |
 
-## Extension Settings
+### Forms
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+| Trigger | Content                                                                         |
+| ------: | ------------------------------------------------------------------------------- |
+|    `ff` | form_for `<%= form_for @${1:changeset}, ${2:url}, ${3:[]}, fn f -> %>`          |
+|    `et` | form error `<%= error_tag ${1:f}, :${2:field} %>`                               |
+|    `la` | form label `<%= label ${1:f}, :${2:field}, "${3:Text}" %>`                      |
+|    `ti` | form text input `<%= text_input ${1:f}, :${2:field} %>`                         |
+|    `pi` | form password input `<%= password_input ${1:f}, :${2:field} %>`                 |
+|  `subm` | form submit `<%= submit ${1:Text} %>`                                           |
+| `submc` | form submit with class `<%= submit ${1:Text}, class: "${3:btn btn-primary}" %>` |
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Please read the [CHANGELOG](CHANGELOG.md) to see what has changed in this extension over time.
 
-### 1.0.0
+## Known Issues
 
-Initial release of ...
+Not really an issue but I wanted the `e=, e-, e#` snippets to be just a `=, -, #`, but they didn't trigger on these special characters so had to prepend them with `e` letter.
 
-### 1.0.1
+## Disclaimer
 
-Fixed issue #.
+Graciously borrowed some of the snippets from the [phoenix-elixir-snippets](https://atom.io/packages/phoenix-elixir-snippets) for Atom and refactored them to work with VS Code.
 
-### 1.1.0
+## Contribution
 
-Added features X, Y, and Z.
+```sh
+git clone https://github.com/stefanjarina/vscode-eex-snippets
+```
 
----
+And copy the `vscode-eex-snippets` folder into the `<user home>/.vscode/extensions` folder. Restart Code.
 
-## Working with Markdown
+## License
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+[MIT](LICENSE.md) License
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Copyright (c) 2017 Stefan jarina
