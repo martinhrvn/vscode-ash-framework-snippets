@@ -2,7 +2,7 @@
   "name": "ash-framework-snippets",
   "displayName": "Ash Framework Snippets",
   "description": "Snippets for Ash Framework",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "test": "",
     "deploy": "vsce publish"
