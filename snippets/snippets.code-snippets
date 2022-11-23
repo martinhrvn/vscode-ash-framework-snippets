@@ -4,7 +4,7 @@
     "body": [
       "defmodule ${1:Module} do",
       "\tuse Ash.Resource",
-      "\t$2"
+      "\t$2",
       "end"
     ]
   },
@@ -46,28 +46,27 @@
     ]
   },
   "Ash has one": {
-    "prefix": "ahaso",
+    "prefix": "aho",
     "body": [
       "has_one :${1:name}, ${2:Resource}"
     ]
-  }
   },
   "Ash Resource with Postgres": {
-      "prefix": "arespg",
-      "body": [
-        "defmodule ${1:Module} do",
-        "\tuse Ash.Resource,"
-        "\t\tdata_layer: ${3:AshPostgres.DataLayer}",
-        "end"
-      ]
-    },
-    "Ash postgres": {
-        "prefix": "apg",
-        "body": [
-            "postgres do",
-                "table \"${1:table}\"",
-                "repo ${2:Project}.Repo",
-              "end"
-        ]
-    }
+    "prefix": "arespg",
+    "body": [
+      "defmodule ${1:Module} do",
+      "\tuse Ash.Resource,",
+      "\t\tdata_layer: ${3:AshPostgres.DataLayer}",
+      "end"
+    ]
+  },
+  "Ash postgres": {
+    "prefix": "apg",
+    "body": [
+      "postgres do",
+      "table \"${1:table}\"",
+      "repo ${2:Project}.Repo",
+      "end"
+    ]
+  }
 }
