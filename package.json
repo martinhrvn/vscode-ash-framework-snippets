@@ -5,6 +5,7 @@
   "repository": "https://github.com/martinhrvn/vscode-ash-framework-snippets",
   "publisher": "martinhrvn",
   "version": "0.0.5",
+  "icon": ".gihub/images/ash-icon.png",
   "scripts": {
     "test": "",
     "deploy": "vsce publish"
