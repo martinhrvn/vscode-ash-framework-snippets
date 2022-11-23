@@ -6,5 +6,48 @@
       "\tuse Ash.Resource, data_layer: ${3:AshPostgres.DataLayer}",
       "end"
     ]
+  },
+  "Ash Actions": {
+    "prefix": "aact",
+    "body": [
+      "actions do",
+      "\t${1}",
+      "end"
+    ],
+    "description": " Ash actions"
+  },
+  "Ash Attributes": {
+    "prefix": "aatrs",
+    "body": [
+      "attributes do",
+      "\t${1}",
+      "end"
+    ]
+  },
+  "Ash uuid PK": {
+    "prefix": "auuid",
+    "body": "uuid_primary_key :${1:name}"
+  },
+  "Ash int PK": {
+    "prefix": "aintpk",
+    "body": "integer_primary_key :${1:name}"
+  },
+  "Ash attribute": {
+    "prefix": "aatr",
+    "body": "attribute :${1:name}, :${2:string}"
+  },
+  "Ash relationships": {
+    "prefix": "arel",
+    "body": [
+      "relationships do",
+      "\t${1}",
+      "end"
+    ]
+  },
+  "Ash has one": {
+    "prefix": "ahaso",
+    "body": [
+      "has_one :${1:name}, ${2:Resource}"
+    ]
   }
 }
